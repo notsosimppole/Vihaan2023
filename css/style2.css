@@ -29,3 +29,10 @@
     color: transparent;
   }
 }/*# sourceMappingURL=style2.css.map */
+
+
+@media screen and (max-width: 700px){
+  .myclass222{
+    display:none;
+  }
+}
