@@ -1509,8 +1509,15 @@
       <script src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
       <script src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
       <script>
-        ele=document.getElementsByClassName('devfolio-button-iframe');
-        ele.style.height='44px';
+        var iframe = document.querySelector('#devfolio-button-iframe');
+        iframe.onload = function() {
+          var iframeDocument = iframe.contentWindow.document.documentElement;
+          var newHeight = iframeDocument.scrollHeight;
+          var newWidth = iframeDocument.scrollWidth;
+          iframe.style.height = newHeight + 'px';
+          iframe.style.width = newWidth + 'px';
+
+        };
       </script>
       <script>
         jQuery(document).ready(function () {
