@@ -7395,6 +7395,9 @@ i.btn-action-hide {
                 #register-button {
                   display:flex;
                 }
+                .type-wrap {
+                  display:none;
+                }
 }
 
 .overflow-hidden {
