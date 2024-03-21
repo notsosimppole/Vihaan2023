@@ -7396,6 +7396,20 @@ i.btn-action-hide {
   box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
+/* button in phone */
+#register-button {
+  display: none;
+}
+
+@media only screen and (max-width: 750px) {
+                #register-button {
+                  display:flex;
+                }
+                .bar2 {
+                  display:none;
+                }
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
