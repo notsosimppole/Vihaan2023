@@ -8450,3 +8450,15 @@ p {
     width: 7%;  
   }
 }
+
+@media screen and (max-width: 992px) {
+  .laptop-hivetrack {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .mobile-hivetrack {
+    display: none !important;
+  }
+}
