@@ -377,6 +377,8 @@ jQuery(document).ready(function () {
             match: function () {
                 jQuery('#mainmenu').show();
                 jQuery('header').removeClass('height-auto');
+                var link = document.getElementById('nav-ask');
+link.style.display = 'none';
                 mobile_menu_show = 1;
                 col = tmp_col;			
             },
@@ -1029,11 +1031,15 @@ jQuery(document).ready(function () {
 
           jQuery('#b-menu').on("click", function() {                 
                 $('#de-overlay').show();
+                $('#mlh-trust-badge').hide();
+//                 var link = document.getElementById('mlh-trust-badge');
+// link.style.display = 'none';
                 $('#de-extra-wrap').addClass('open');             
              });
 
           jQuery('#b-menu-close').on("click", function() {                 
                 $('#de-overlay').hide();
+                $('#mlh-trust-badge').show();
                 $('#de-extra-wrap').removeClass('open');             
              });
 
